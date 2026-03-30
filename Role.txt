@@ -1,0 +1,6 @@
+Team Lead : Yasmin
+Data Engineer: Anisha
+Data Analyst : Khushi
+Statistician : Piyush
+ML Engineer : Yasmin
+Business Analyst : Sameer
