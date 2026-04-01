@@ -1,0 +1,6 @@
+name: team1-banking-env
+
+dependencies:
+  - pandas
+  - matplotlib
+  - seaborn
