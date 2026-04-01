@@ -2,10 +2,10 @@
 
 # Importing  libraries
 import pandas as pd
-import numpy as np
+
 
 # Loading cleaned dataset
-df = pd.read_csv("data/processed/cleaned_churn.csv")
+df = pd.read_csv("../data/processed/cleaned_churn.csv")
 
 # Converting gender & country into numerical values
 df = pd.get_dummies(df, columns=["country", "gender"], drop_first=True)
@@ -16,12 +16,12 @@ df[['country_Germany','country_Spain','gender_Male']].astype(int)
 
 
 # Created a new feature to show relationship between balance and salary
-df['balance_salary_ratio'] = df['balance'] / (df['estimated_salary'] + 1)
+#df['balance_salary_ratio'] = df['balance'] / (df['estimated_salary'] + 1)
 
 
 # Saving processed dataset for model training
 
-df.to_csv("data/processed/final.csv", index=False)
+df.to_csv("../data/processed/final.csv", index=False)
 
 print("Feature engineering and data preparation completed!")
 
