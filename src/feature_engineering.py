@@ -2,10 +2,10 @@
 
 # Importing libraries
 import pandas as pd
-import numpy as np
+
 
 # Loading cleaned dataset
-df = pd.read_csv("data/processed/cleaned_churn.csv")
+df = pd.read_csv("../data/processed/cleaned_churn.csv")
 
 # Dropping gender column (not needed for model)
 df = df.drop(columns=["gender"])
@@ -20,14 +20,13 @@ final_df = df.drop(columns=[
 ])
 
 # Saving processed dataset for model training
-final_df.to_csv("data/processed/final.csv", index=False)
+final_df.to_csv("../data/processed/final.csv", index=False)
 
 print("Feature engineering and data preparation completed!")
 
 
 # Loaded cleaned dataset
 # Dropped gender column
-# Converted categorical variable (country) into numerical form
 # Created new feature for balance and salary relationship
 # Dropped unnecessary columns
 # Saved final dataset for model training

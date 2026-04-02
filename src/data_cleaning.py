@@ -2,19 +2,15 @@
 
 # Importing required libraries
 import pandas as pd
-import numpy as np
-import os
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Loading raw dataset
-df = pd.read_csv("data/raw/Bank Customer Churn Prediction.csv")
+df = pd.read_csv("../data/raw/Bank Customer Churn Prediction.csv")
 
 # Checking duplicate rows
-print("Duplicate rows:", df.duplicated().sum())
+print("Duplicate rows:", df.duplicated().sum())  #there are no duplicate values
 
-# Removing duplicates
-df.drop_duplicates(inplace=True)
 
 # Checking datatypes
 df.dtypes
@@ -89,11 +85,11 @@ sns.boxplot(x=df['estimated_salary'])
 plt.title("Estimated Salary Boxplot")
 plt.show()
 
-# Estimated_salary has no significant outliers, so no action needed
+# Estimated_salary has no outliers, so no action needed
 
 
 # Saving cleaned dataset
-df.to_csv("data/processed/cleaned_churn.csv", index=False)
+df.to_csv("../data/processed/cleaned_churn.csv", index=False)
 
 print("Processed dataset saved successfully!")
 
