@@ -96,3 +96,12 @@ plt.show()
 df.to_csv("data/processed/cleaned_churn.csv", index=False)
 
 print("Processed dataset saved successfully!")
+
+# Loaded raw dataset
+# Checked and removed duplicate rows
+# Checked data types of all columns
+# Dropped customer_id as it is not useful
+# Detected outliers using IQR method
+# Visualized outliers using boxplots
+# Kept or ignored outliers based on importance
+# Saved cleaned dataset to processed folder
