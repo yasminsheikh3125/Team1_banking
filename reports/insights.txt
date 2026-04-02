@@ -1,0 +1,185 @@
+UNIVARIATE DATA :-
+
+1.Distribution of Balance:
+• The distribution of graph is right skewed (positively skewed).
+• Most people have very little or zero balance.
+• A good number of people have medium balances (around 80k to 150k).
+• Only a few people have very high balances.
+• Majority of customers maintain lower balance.
+• Very few observations exist at higher balances above 180,000.
+Outliers:
+• A few very high balance values (200k) act as outliers.
+• These can affect mean and model performance.
+
+2.Distribution of Age:
+• The graph is positively skewed (Right-skewed).
+• Major customer base: Most customers are in the 30–40 age group, indicating this is the primary target segment.
+• Decline with age: The number of customers gradually decreases after age 40, showing fewer older customers.
+• Business implication: The organization can focus marketing strategies on young and middle-aged customers as they form the majority.
+
+3.Distribution of Credit Score:
+• The graph is left-skewed.
+• Most customers have a credit score between 600 and 750.
+• Very few customers have low scores (below 500).
+• Very few customers have very high scores (above 800).
+• The most common credit score range is around 650–700.
+• Overall, the distribution is slightly right-skewed (positively skewed).
+
+4.Distribution of Estimated Salary:
+• Salaries are evenly spread from low to high.
+• No group has much higher or lower salaries than others.
+• There is no skewness (not tilted left or right).
+• There is no peak (no most common salary range).
+• Customers are almost equally distributed across all salary levels.
+• Salary data is balanced and uniform, not concentrated in one range.
+
+5.Distribution of Tenure:
+• Customers are spread across all tenure years (0–10 years).
+• Most tenure values have a similar number of customers.
+• The distribution is almost even (uniform).
+• There is a slight increase in customers around tenure 9–10 years.
+• Customers include both new and long-term users.
+
+6.Distribution of Number of Products:
+• The graph is right-skewed.
+• Data is mostly concentrated on 1 and 2 products.
+• Most customers have 1 or 2 products.
+• Very few customers have 3 products.
+• Almost no customers have 4 products.
+• Customers with only 1 product are more likely to leave (churn).
+• Overall, customers do not use many products.
+
+
+
+BIVARIATE DATA :-
+
+1.Churn VS Age:
+• Churn means customers leaving the bank.
+• Older customers tend to leave more often. This may be because they:
+• Have different financial needs
+• Prefer other banks with better services
+• Middle-aged customers (around 30–40) are more stable and less likely to leave.
+• This group is usually the most important customer segment for the bank.
+
+Conclusion: Banks should focus on keeping older customers and maintaining strong relationships with middle-aged customers.
+
+2.Churn vs Balance:
+• Customers with high account balance are more likely to leave.
+• Reasons:
+-They are financially aware.
+-They look for better offers, interest rates, or services.
+• Other banks try to attract them with special benefits.
+• Customers with low balance usually stay because: 
+-They have fewer options.
+- They are less active in switching banks.
+
+Conclusion: Banks should give special attention and offers to high-balance customers to retain them.
+
+3.Churn vs Number of Products:
+• Customers with only 1 product (like just a savings account) are more likely to leave.
+• Customers with multiple products (loans, cards, insurance, etc.) are less likely to leave because:
+-They are more connected to the bank.
+-Switching becomes difficult and inconvenient.
+• The more products a customer uses, the stronger their relationship with the bank.
+
+Conclusion: Banks should encourage customers to use more products to reduce churn.
+
+4.Churn vs Active Members:
+• Active members are customers who regularly use bank services (transactions, app usage, cards, etc.).
+• Inactive members are those who rarely use their accounts.
+• Customers who are inactive are much more likely to leave (churn) because:
+- They are not engaged with the bank.
+- They may already be using other banks.
+- They don’t see much value in staying.
+• On the other hand, active customers:
+-Use multiple services.
+-Have regular transactions.
+-Feel more connected to the bank.
+→ So, they are less likely to leave.
+
+Conclusion:Increasing customer activity (through offers, apps, rewards) can reduce churn significantly.
+
+5.Churn vs Country:
+• France:
+-Has the highest number of customers.
+-Churn rate is average (medium risk).
+• Germany:
+-Customers are more likely to leave.
+-Indicates high churn risk.
+• Spain:
+-Customers are more loyal.
+-Very low churn rate.
+•Overall, location affects customer behavior.
+
+• Conclusion:
+Germany = High risk
+France = Medium risk
+Spain = Low risk
+• Banks should apply different strategies for each country.
+
+6.Churn vs Gender:
+• Both male and female customers mostly stay, meaning churn is generally low for both.
+• Female customers:
+-Have a slightly higher churn rate.
+-May be more sensitive to service quality, trust, or experience.
+• Male customers:
+-Make up a larger portion of total customers.
+-Slightly lower churn compared to females.
+• However, the difference is very small, so:
+-Gender is not a major factor.
+-It has only a minor impact on churn.
+
+Conclusion:Banks should not rely heavily on gender-based strategies, but small improvements in customer experience can help both groups.
+
+
+
+CORRELATION OF HEAT MAP:-
+
+1.What Heatmap Represents:
+• This chart shows how different things are related to each other.
+• If two things increase or decrease together, the value is close to +1 (strong positive relationship).
+• If one thing goes up while the other goes down, the value is close to –1 (strong negative relationship).
+• If there’s no clear connection, the value is around 0.
+• The diagonal is all 1 because each thing is being compared with itself, so it’s always perfectly related.
+
+2.Key variables in heatmap:
+•credit_score
+•age
+•tenure
+•balance
+•products_number
+•credit_card
+•active_member
+•estimated_salary
+•churn (target variable — very important)
+
+
+3.Most important insights (focus on CHURN):
+
+⚪ Age vs Churn (~ +0.29):
+-Moderate positive correlation.
+-Older customers are more likely to churn.
+⚪ Active Member vs Churn (~ –0.16):
+-Negative correlation.
+-Active users are less likely to leave.
+⚪ Balance vs Churn (~ +0.12)
+-Weak positive correlation.
+-Customers with higher balance are slightly more likely to churn.
+⚪ Products Number vs Churn (~ –0.04):
+-Very weak negative.
+-Customers with more products churn slightly less.
+⚪ Credit Score vs Churn (~ –0.03):
+-Almost no correlation.
+-Credit score is not a strong predictor of churn.
+⚪ Estimated Salary (~ +0.01):
+-No meaningful relationship.
+-Salary does not influence churn significantly.
+⚪ Tenure (~ –0.01):
+-No relationship.
+-Length of time as a customer doesn’t strongly affect churn here.
+
+
+
+
+
+
