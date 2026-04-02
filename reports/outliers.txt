@@ -1,0 +1,34 @@
+OUTLIERS:-
+
+1.Credit Score:
+• Most values lie between 580 – 720.
+• Median is around 650.
+• Outliers present:
+-Few values around 350 – 400.
+•Meaning:
+-Some customers have very low credit scores.
+-These are rare but valid cases. 
+
+2.Age:
+• Most values lie between 30–45 years.
+• Median is around 37–40.
+• Outliers present:
+-Values around 60–90+.
+•Meaning:
+-Few customers are much older than most.
+-These are normal real-world values.
+
+3.Balance:
+• Values range from 0–250,000.
+• Median is around 100,000.
+• No outliers.
+•Meaning:
+-Data is evenly spread.
+-No unusual values.
+
+4.Estimated Salary:
+• Values range from 0–200,000.
+• Median is around 100,000.
+• No outliers.
+• Meaning:
+-Data is clean and balanced.

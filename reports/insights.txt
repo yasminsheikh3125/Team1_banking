@@ -135,46 +135,51 @@ Conclusion:Banks should not rely heavily on gender-based strategies, but small i
 
 CORRELATION OF HEAT MAP:-
 
+1.What Heatmap Represents:
+• This chart shows how different things are related to each other.
+• If two things increase or decrease together, the value is close to +1 (strong positive relationship).
+• If one thing goes up while the other goes down, the value is close to –1 (strong negative relationship).
+• If there’s no clear connection, the value is around 0.
+• The diagonal is all 1 because each thing is being compared with itself, so it’s always perfectly related.
+
+2.Key variables in heatmap:
+•credit_score
+•age
+•tenure
+•balance
+•products_number
+•credit_card
+•active_member
+•estimated_salary
+•churn (target variable — very important)
+
+
+3.Most important insights (focus on CHURN):
+
+⚪ Age vs Churn (~ +0.29):
+-Moderate positive correlation.
+-Older customers are more likely to churn.
+⚪ Active Member vs Churn (~ –0.16):
+-Negative correlation.
+-Active users are less likely to leave.
+⚪ Balance vs Churn (~ +0.12)
+-Weak positive correlation.
+-Customers with higher balance are slightly more likely to churn.
+⚪ Products Number vs Churn (~ –0.04):
+-Very weak negative.
+-Customers with more products churn slightly less.
+⚪ Credit Score vs Churn (~ –0.03):
+-Almost no correlation.
+-Credit score is not a strong predictor of churn.
+⚪ Estimated Salary (~ +0.01):
+-No meaningful relationship.
+-Salary does not influence churn significantly.
+⚪ Tenure (~ –0.01):
+-No relationship.
+-Length of time as a customer doesn’t strongly affect churn here.
 
 
 
 
 
 
-
-
-
-OUTLIERS:-
-
-1.Credit Score:
-• Most values lie between 580 – 720.
-• Median is around 650.
-• Outliers present:
--Few values around 350 – 400.
-•Meaning:
--Some customers have very low credit scores.
--These are rare but valid cases. 
-
-2.Age:
-• Most values lie between 30–45 years.
-• Median is around 37–40.
-• Outliers present:
--Values around 60–90+.
-•Meaning:
--Few customers are much older than most.
--These are normal real-world values.
-
-3.Balance:
-• Values range from 0–250,000.
-• Median is around 100,000.
-• No outliers.
-•Meaning:
--Data is evenly spread.
--No unusual values.
-
-4.Estimated Salary:
-• Values range from 0–200,000.
-• Median is around 100,000.
-• No outliers.
-• Meaning:
--Data is clean and balanced.
